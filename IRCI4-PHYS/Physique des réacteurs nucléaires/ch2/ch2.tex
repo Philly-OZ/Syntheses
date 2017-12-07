@@ -56,14 +56,14 @@ Pour considérer le \textbf{flux total}, il suffit d'intégrer sur toutes les di
 Si on regarde en plus sur toute les vitesses (intégration), on retrouve bien un flux par unité de 
 surface et de temps : il s'agit du \textbf{flux intégré}
 \begin{equation}
-\varPhi (\bar r,t)\,\, = \;\int_o^\infty  \varphi  (\bar r,v,t)dv
+\varPhi (\bar r,t)\,\, = \;\int_o^\infty  \varPhi  (\bar r,v,t)dv
 \end{equation}
 
 \subsubsection{Densité de courant (angulaire)}
 On obtient la \textbf{densité de courant} angulaire en multipliant le flux angulaire par un élément d'angle solide 
 $\bar\Omega$
 \begin{equation}
-\bar J(\bar r,v,\bar \Omega ,t) = \varphi (\bar r,v,\bar \Omega ,t)\,\bar \Omega  = \bar vN(\bar r,v,\bar \Omega ,t)
+\bar J(\bar r,v,\bar \Omega ,t) = \varPhi (\bar r,v,\bar \Omega ,t)\,\bar \Omega  = \bar vN(\bar r,v,\bar \Omega ,t)
 \end{equation}
 Le \textbf{courant net} correspond au nombre de neutrons traversant une surface par unité de temps et s'obtient en
 intégrant la densité de courant projeté sur la normale sur toute la surface, pour toute direction et toute vitesse
@@ -98,7 +98,7 @@ R = \left(\dfrac{\text{Nb. noyaux}}{cm^3}\right)\times\left(\dfrac{\text{Nb. neu
 Des neutrons vont vers des "cibles" relativement fine. Le taux de réaction va être la surface de 
 la cible (section transverse, efficace) multipliée par le flux de neutrons (le nombre de neutrons 
 par $cm^2$ et par seconde qui arrivent sur une "cible" donnée) et ceci multiplié par le nombre de 
-"cible" par unité de volume que l'on trouve dans la "cible totale"
+"cibles" par unité de volume que l'on trouve dans la "cible totale"
 \begin{equation}
 R = N.\varPhi(\bar r,t).\sigma(\bar r) = \Sigma(\bar r)\varPhi(\var r, t)
 \end{equation}
