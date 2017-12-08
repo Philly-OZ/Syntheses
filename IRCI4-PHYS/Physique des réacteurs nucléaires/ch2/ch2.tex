@@ -185,7 +185,7 @@ vitesse $dv$ autour de $v$ et dans la direction d$\bar\Omega$ autour de $\bar \O
 \begin{equation}
 \frac{{\partial \,}}{{\partial t}}\int\limits_V    N(\bar r,v,\bar \Omega ,t)d\bar r = \int\limits_V    \frac{{\partial N(\bar r,v,\bar \Omega ,t)}}{{\partial t}}d\bar r = \int\limits_V    \frac{1}{v}\frac{{\partial \varPhi (\bar r,v,\bar \Omega ,t)}}{{\partial t}}d\bar r
 \end{equation} 
-Cette variation peut être causes par trois choses distinctes (respectivement le premier, deuxième 
+Cette variation peut être causée par trois choses distinctes (respectivement le premier, deuxième 
 et troisième terme ci-dessous)
 \begin{enumerate}
 \item Les sources
@@ -223,7 +223,7 @@ possédant une vitesse et une direction données, nous allons reprendre l'équat
 nous allons adpater chacun des termes pour qu'ils correspondent aux phénomènes dans lesquels
 les neutrons sont impliqués.\\
 
-Commençons par le terme de source. Nous envisagerons trois voies par lesquels ont le nombre
+Commençons par le terme de source. Nous envisagerons trois voies par lesquelles le nombre
 de neutrons ayant une vitesse et une direction données peut augmenter : la fission, le
 scattering et une éventuelle source extérieure de neutrons.
 
@@ -236,7 +236,7 @@ Le terme de source extérieure est le plus simple puisqu'il est assez général 
 Q(\bar r,v,\bar \Omega ,t)
 \end{equation}
 
-Les fissions libèrent de neutrons et sont donc des sources potentielles de neutrons ayant 
+Les fissions libèrent des neutrons et sont donc des sources potentielles de neutrons ayant 
 la bonne énergie et la bonne direction au point $\bar r$ que nous regardons. Le nombre total de
 neutrons émis par fission par unité de temps est obtenu en multipliant le taux de réaction
 de fission par le nombre de neutrons émis par fission, puis en intégrant pour tenir
@@ -250,7 +250,7 @@ et une direction quelconque :
 
 Il faut ensuite restreindre cette quantité aux neutrons ayant la bonne vitesse et la bonne direction.
 La multiplication par le spectre Maxwellien de la distribution des vitesses permet de s'assurer
-qu'on a sélectionner les neutrons émis par fission qui ont la "bonne vitesse" v.
+qu'on a sélectionné les neutrons émis par fission qui ont la "bonne vitesse" v.
 Etant donné que le temps de réaction de fission est beaucoup plus grand que le temps d'absorption
 d'un neutron par le noyau, on supposera que le neutron émis n'a pas gardé souvenir des caractéristiques
 du neutron incident et donc que les fissions émettent des neutrons de manière totalement
@@ -288,7 +288,7 @@ le taux de scattering vers la bonne vitesse et la bonne direction finale
 En résumé, on trouve pour le terme de source
 \begin{equation}
 \begin{array}{ll}
-\DS S(\bar r,v,\bar \Omega ,t) = \frac{1}{{4\pi }}\chi (v)&\DS\int\limits_{4\pi }    \int_o^\infty     \nu {\Sigma _f}(\bar r,v')\varPhi (\bar r,v',\bar \Omega ',t)dv'd\bar \Omega\\ \DS& +
+\DS S(\bar r,v,\bar \Omega ,t) = \frac{1}{{4\pi }}\chi (v)&\DS\int\limits_{4\pi }    \int_o^\infty     \nu {\Sigma _f}(\bar r,v')\varPhi (\bar r,v',\bar \Omega ',t)dv'd\bar \Omega '\\ \DS& +
 \int\limits_{4\pi }    \int_o^\infty     {\Sigma _s}(\bar r,v',\bar \Omega ' \to v,\bar \Omega )\varPhi (\bar r,v',\bar \Omega ',t)dv'd\bar \Omega ' \DS+ Q(\bar r,v,\bar \Omega ,t)
 \end{array}
 \end{equation}
@@ -300,7 +300,7 @@ est à encadrer sur un mur de sa chambre :\\
 \begin{equation}
 \begin{array}{ll}
 \DS \bar \Omega .\bar \nabla \varPhi (\bar r,v,\bar \Omega ) &\DS+ {\Sigma _t}(\bar r,v)\varPhi (\bar r,v,\bar \Omega ) - \int\limits_{4\pi }    \int_o^\infty     {\Sigma _s}(\bar r,v',\bar \Omega ' \to v,\bar \Omega )\varPhi (\bar r,v',\bar \Omega ')dv'd\bar \Omega '\\
-&\DS  = \frac{1}{{4\pi }}\chi (v)\int\limits_{4\pi }    \int_o^\infty     \nu {\Sigma _f}(\bar r,v')\varphi (\bar r,v',\bar \Omega ')dv'd\bar \Omega ' + Q(\bar r,v,\bar \Omega )
+&\DS  = \frac{1}{{4\pi }}\chi (v)\int\limits_{4\pi }    \int_o^\infty     \nu {\Sigma _f}(\bar r,v')\varPhi (\bar r,v',\bar \Omega ')dv'd\bar \Omega ' + Q(\bar r,v,\bar \Omega )
 \end{array}
 \end{equation}
 }
