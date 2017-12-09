@@ -334,7 +334,7 @@ Cette notation permettra de généraliser facilement à la forme non-stationnair
 
 
 \subsubsection{Avec neutrons retardés}
-Hélas, tout ceci était trop simple. Il faut en effet tenir comptes des neutrons qui ne sont pas 
+Hélas, tout ceci était trop simple. Il faut en effet tenir compte des neutrons qui ne sont pas 
 directement issu des fissions mais émis par des produits de fission qui les produisent par 
 désexcitation radioactive. On se rappelle que les neutrons retardés sont émis par les précurseurs 
 que l'on peut classer en six groupes (classement par spectre et période de demi-vie).\\
@@ -351,7 +351,7 @@ avec une période de demi vie valant $ln(2)/\lambda_i$. Le second terme, positif
 On retrouve le taux de fission $\Sigma_f\varPhi$ qui donne le nombre de fissions par unité de volume 
 et de temps mais tous ne donnent pas lieu à des précurseurs. Il faut multiplier ceci par $\nu$ pour 
 avoir le nombre de neutrons émis par fission par unité de volume et de temps puis encore multiplier ceci par 
-$\beta$, la fraction de précurseurs. Ce second terme est alors fraction de précurseurs dans le groupe $i$ 
+$\beta$, la fraction de précurseurs. Ce second terme est alors la fraction de précurseurs dans le groupe $i$ 
 due à toutes les fissions en $\bar r$  par unité de volume et de temps.
 \footnote{A part le $\beta$, ce second terme ressemble à un terme de production de neutrons par fission,
 comment passe-t-on à la production de précurseurs ?}\\
@@ -368,7 +368,7 @@ précédemment décrit, mais modifié par les neutrons retardés
 \end{equation}
 où le $J_0\varPhi$ est l'opérateur de production pour les neutrons prompts et le second terme ne concerne que les 
 neutrons retardés. La fraction $\chi_i(v)/4\pi$ est présente car il n'y a pas de raison de considérer 
-autre chose que de l'isotropie sur ces  neutrons retardés (les CI sont oubliés sur 10s).
+autre chose que de l'isotropie sur ces  neutrons retardés (les CI sont oubliées sur 10s).
 \footnote{Comment justifie-t-on la partie en $-\beta$ ? On enlève une partie des neutrons produits par fission
 car elles créent les précurseurs ? Revoir la signification de chacun des termes de l'équation...}\\
 
@@ -378,20 +378,20 @@ de chaque groupes retardés. Posons alors
 {F_i}(\bar r,v,t) \equiv \left( {{C_i}(\bar r,t).\frac{{{\chi _i}(v)}}{{4\pi }}} \right)
 \end{equation}
 %Si l'on considère ceci, il faudra également avoir la dérivée temporelle de cette quantité. 
-En introduisant cette grandeur ainsi que sa dérive temporelle, on obtient six équations pour l'évolution
+En introduisant cette grandeur ainsi que sa dérivée temporelle, on obtient six équations pour l'évolution
 de la concentration en précurseurs ainsi qu'une équation de conservation pour tous les neutrons, ce qui
 fournit alors un système d'équation pour le problème de transport neutronique avec neutrons retardés\footnote{Pq?} :\\
 
 \cadre{
 \begin{equation}
-\frac{{\partial {F_i}(\bar r,v,t)}}{{\partial t}} =  - {\lambda _i}{F_i}(\bar r,v,t) + {\beta _i}({J_i}\varphi )(\bar r,v,t)\quad \quad ,\quad i = 1,\dots, 6
+\frac{{\partial {F_i}(\bar r,v,t)}}{{\partial t}} =  - {\lambda _i}{F_i}(\bar r,v,t) + {\beta _i}({J_i}\varPhi )(\bar r,v,t)\quad \quad ,\quad i = 1,\dots, 6
 \end{equation}
 \begin{equation}
 \frac{1}{v}\frac{{\partial \varPhi (\bar r,v,\bar \Omega ,t)}}{{\partial t}} = [(1 - \beta ){J_o} - K]\varPhi (\bar r,v,\bar \Omega ,t) + \sum\limits_{i = 1}^6    {\lambda _i}{F_i}(\bar r,v,t) + Q(\bar r,v,\bar \Omega ,t)
 \end{equation}}
 
 Dans le cas stationnaire, les dérivées temporelles s'annulent $\partial_t = 0$, ce qui est intéressant
-pour analyser ce système à sept inconnues. Comme il s'agit d'un situation d'équilibre, la 
+pour analyser ce système à sept inconnues. Comme il s'agit d'une situation d'équilibre, la 
 décroissance radioactive compense la production de précurseurs : $\lambda_i F_i$ va être 
 remplacé par les $\beta_iJ_i$
 \begin{equation}
@@ -430,7 +430,7 @@ Par continuité du flux\footnote{On peut le justifier rigoureusement ?} sur la f
 \end{equation}
 Comme condition aux limites, considérons un réacteur dans le vide. Lorsqu'un neutron sort, il ne 
 reviendra pas car il sera dans le vide. De même, rien ne va rentrer car rien ne vient du vide. Dès 
-lors, en tout point de la surface extérieur, pour toute vitesse et toute direction entrante, le 
+lors, en tout point de la surface extérieure, pour toute vitesse et toute direction entrante, le 
 flux est nul (flux de neutrons rentrant nul)
 \begin{equation}
 \varPhi ({\bar r_s},v,\bar \Omega ) = 0\quad \quad \forall {\bar r_s} \in \Gamma ,\;\bar n.\bar \Omega  < 0
@@ -458,7 +458,7 @@ On injecte dans l'équation non-homogène
 \begin{equation}
 \frac{dC(s)}{ds}\phi_H(s)+C(s)\frac{d\phi_H(s)}{dt} + \Sigma_t(s)C(s)\phi_H(s) = S(s)
 \end{equation}
-où $S(s)$ est la source (la somme des deux derniers terme est nulle puisqu'on retombe sur l'équation homogène). Il est possible de 
+où $S(s)$ est la source (la somme des deux derniers termes du membre de gauche est nulle puisqu'on retombe sur l'équation homogène). Il est possible de 
 particulariser ce résultat avec les conditions initiales : si on recule suffisamment vers les 
 $\bar r$ négatifs, on va sortir du réacteur. A un moment donné, la valeur du flux 
 $\phi(\bar r_s, \bar r)$ va se retrouver en direction entrante et être nulle : on peut ainsi 
